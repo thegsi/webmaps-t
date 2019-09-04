@@ -1,0 +1,181 @@
+<html>
+
+<head>
+  <title>Western Ghats Caves</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin="" />
+  <link href="./leaflet.timeline.css" rel="stylesheet" type="text/css" />
+  <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js" integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og==" crossorigin=""></script>
+  <script src="./IntervalTree.js"></script>
+  <script src="./Timeline.js"></script>
+  <script src="./TimelineSliderControl.js"></script>
+  <script src="https://d3js.org/d3.v3.min.js"></script>
+  <link href="./vis-timeline-graph2d.min.css" rel="stylesheet" type="text/css" />
+  <script src="./vis-timeline-graph2d.min.js"></script>
+
+  <style>
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    #map {
+      width: 100vw;
+      height: 100vh;
+    }
+
+    .leaflet-bottom.leaflet-left {
+      width: 100%;
+    }
+
+    .leaflet-control-container .leaflet-timeline-controls {
+      box-sizing: border-box;
+      width: 100%;
+      margin: 0;
+      margin-bottom: 15px;
+    }
+
+    table,
+    th,
+    td {
+      background-color: white;
+      border: 5px solid black;
+      border-collapse: collapse;
+      height: 30px;
+      width: 100%;
+      padding: 0;
+    }
+
+    .vis-t {
+      height: 100px;
+    }
+
+    .time-slider {
+      width: 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="map"></div>
+
+  <script>
+    // function getColorFor(str) { // java String#hashCode
+    //   var hash = 0;
+    //   for (var i = 0; i < str.length; i++) {
+    //     hash = str.charCodeAt(i) + ((hash << 5) - hash);
+    //   }
+    //   var red = (hash >> 24) & 0xff;
+    //   var grn = (hash >> 16) & 0xff;
+    //   var blu = (hash >>  8) & 0xff;
+    //   return 'rgb(' + red + ',' + grn + ',' + blu + ')';
+    // }
+    var osmUrl = 'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
+    var osmAttrib = '&copy; <a href="http://openstreetmap.org/copyright">OpenStreetMap</a> contributors';
+    var osm = L.tileLayer(osmUrl, {
+      maxZoom: 18,
+      attribution: osmAttrib
+    });
+    var map = L.map('map', {
+      layers: [osm],
+      center: new L.LatLng(19.941, 73.748),
+      zoom: 8
+    });
+    var timeline;
+    var timelineControl;
+
+    function onLoadData(data) {
+      timeline = L.timeline(data, {
+        style: function(data) {
+          return {
+            stroke: false,
+            // color: getColorFor(data.properties.name),
+            color: 'black',
+            fillOpacity: 0.5
+          }
+        },
+        waitToUpdateMap: true,
+        onEachFeature: function(feature, layer) {
+          layer.bindTooltip(feature.properties.name);
+        }
+      });
+
+      timelineControl = L.timelineSliderControl({
+        formatOutput: function(date) {
+          date = new Date(date)
+          var day = date.getDate();
+          var monthIndex = date.getMonth();
+          var year = date.getFullYear();
+          return `${day}/${monthIndex}/${year}`
+          // return new Date(date).toLocaleDateString();
+        },
+        enableKeyboardControls: true,
+      });
+      timeline.addTo(map);
+      timelineControl.addTo(map);
+      timelineControl.addTimelines(timeline);
+      // createVisTimeline();
+    }
+
+    // Vis-Timeline.js
+    function createVisTimeline() {
+      var visContainer = document.getElementById('vis-timeline');
+      timeline = new vis.Timeline(visContainer, items, groups, options);
+    }
+
+    // create groups
+    var numberOfGroups = 25;
+    var groups = new vis.DataSet()
+    for (var i = 0; i < numberOfGroups; i++) {
+      groups.add({
+        id: i,
+        content: 'Truck&nbsp;' + i
+      })
+    }
+
+    // create items
+    var numberOfItems = 1000;
+    var items = new vis.DataSet();
+
+    var itemsPerGroup = Math.round(numberOfItems/numberOfGroups);
+
+    for (var truck = 0; truck < numberOfGroups; truck++) {
+      var date = new Date();
+      for (var order = 0; order < itemsPerGroup; order++) {
+        date.setHours(date.getHours() +  4 * (Math.random() < 0.2));
+        var start = new Date(date);
+
+        date.setHours(date.getHours() + 2 + Math.floor(Math.random()*4));
+        var end = new Date(date);
+
+        items.add({
+          id: order + itemsPerGroup * truck,
+          group: truck,
+          start: start,
+          end: end,
+          content: 'Order ' + order
+        });
+      }
+    }
+
+    // specify options
+    var options = {
+      stack: true,
+      horizontalScroll: true,
+      zoomKey: 'ctrlKey',
+      maxHeight: 400,
+      start: new Date(),
+      end: new Date(1000*60*60*24 + (new Date()).valueOf()),
+      editable: true,
+      margin: {
+        item: 10, // minimal margin between items
+        axis: 5   // minimal margin between items and the axis
+      },
+      orientation: 'top'
+    };
+
+  </script>
+  <script src="./data/west_ghats_t.geojson"></script>
+</body>
+
+</html>
