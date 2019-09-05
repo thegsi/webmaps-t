@@ -8,6 +8,7 @@
   <script src="./IntervalTree.js"></script>
   <script src="./Timeline.js"></script>
   <script src="./TimelineSliderControl.js"></script>
+  <script src="./VisTimeline.js"></script>
   <script src="https://d3js.org/d3.v3.min.js"></script>
   <link href="./vis-timeline-graph2d.min.css" rel="stylesheet" type="text/css" />
   <script src="./vis-timeline-graph2d.min.js"></script>
@@ -114,65 +115,8 @@
       timeline.addTo(map);
       timelineControl.addTo(map);
       timelineControl.addTimelines(timeline);
-      // createVisTimeline();
+      createVisTimeline(data);
     }
-
-    // Vis-Timeline.js
-    function createVisTimeline() {
-      var visContainer = document.getElementById('vis-timeline');
-      timeline = new vis.Timeline(visContainer, items, groups, options);
-    }
-
-    // create groups
-    var numberOfGroups = 25;
-    var groups = new vis.DataSet()
-    for (var i = 0; i < numberOfGroups; i++) {
-      groups.add({
-        id: i,
-        content: 'Truck&nbsp;' + i
-      })
-    }
-
-    // create items
-    var numberOfItems = 1000;
-    var items = new vis.DataSet();
-
-    var itemsPerGroup = Math.round(numberOfItems/numberOfGroups);
-
-    for (var truck = 0; truck < numberOfGroups; truck++) {
-      var date = new Date();
-      for (var order = 0; order < itemsPerGroup; order++) {
-        date.setHours(date.getHours() +  4 * (Math.random() < 0.2));
-        var start = new Date(date);
-
-        date.setHours(date.getHours() + 2 + Math.floor(Math.random()*4));
-        var end = new Date(date);
-
-        items.add({
-          id: order + itemsPerGroup * truck,
-          group: truck,
-          start: start,
-          end: end,
-          content: 'Order ' + order
-        });
-      }
-    }
-
-    // specify options
-    var options = {
-      stack: true,
-      horizontalScroll: true,
-      zoomKey: 'ctrlKey',
-      maxHeight: 400,
-      start: new Date(),
-      end: new Date(1000*60*60*24 + (new Date()).valueOf()),
-      editable: true,
-      margin: {
-        item: 10, // minimal margin between items
-        axis: 5   // minimal margin between items and the axis
-      },
-      orientation: 'top'
-    };
 
   </script>
   <script src="./data/west_ghats_t.geojson"></script>

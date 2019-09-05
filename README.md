@@ -1,7 +1,7 @@
 
 ## Web Maps-T
 
-Forked from github.com/skeate/Leaflet.timeline
+Forked from https://github.com/skeate/Leaflet.timeline
 Display arbitrary GeoJSON on a map with a timeline slider and play button
 
 Combine with https://github.com/visjs/vis-timeline
@@ -17,13 +17,3 @@ To serve using Python 2 `python serveit.py 8000`.
 Script prevents old files being kept in cache.
 
 Open browser and go to `http://localhost:8000/`.
-
-Vis Timeline example
-
-`{
-  content: "Order 0",
-  end: Wed Sep 04 2019 16:19:31 GMT+0100 (British Summer Time), (new Date(date))
-  group: 0,
-  id: 0,
-  start: Wed Sep 04 2019 12:19:31 GMT+0100 (British Summer Time), (new Date(date))
-}`
