@@ -36,7 +36,7 @@ function createVisTimeline(data){
     zoomKey: 'ctrlKey',
     maxHeight: 400,
     start: new Date(dates[0]),
-    end: new Date(dates.length - 1),
+    end: new Date(dates[dates.length - 1]),
     editable: true,
     margin: {
       item: 10, // minimal margin between items
