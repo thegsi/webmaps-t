@@ -248,13 +248,11 @@ L.TimelineSliderControl = L.Control.extend({
       L.DomUtil.create('option', '', datalistSelect).value = time;
     });
 
-    // My code add table with marks for important points
+    // Thegsi code. Add table with marks for temporal divisions
     var max = this._timeSlider.max
     var min = this._timeSlider.min
     var width = max - min;
     var times = this._getTimes();
-
-    // TODO is timespans define here?
 
     times.forEach((time, i) => {
       var timeClass = 'time-' + time

@@ -39,7 +39,8 @@ L.Timeline = L.GeoJSON.extend({
     const hasStart = 'start' in feature.properties;
     const hasEnd = 'end' in feature.properties;
     if (hasStart && hasEnd) {
-      if (feature.properties.start[0] === '-' & feature.properties.start.length < 5) {
+      // BCE date issue https://stackoverflow.com/questions/25846123/how-to-format-bc-dates-like-700-01-01/25846363#25846363
+      if (feature.properties.start[0] === '-' & feature.properties.start.length < 6) {
         return {
           start: new Date().setYear(feature.properties.start),
           end:   new Date().setYear(feature.properties.end),
@@ -66,7 +67,7 @@ L.Timeline = L.GeoJSON.extend({
     let start = Infinity;
     let end = -Infinity;
 
-    //GeoJSON-T processing required
+    // TODO Hack Refactor to combine with forEach below
     var geoJSONT = data.features.map(function(feature){
       if (feature.properties.when && feature.properties.when.timespans.length) {
          var spans = feature.properties.when.timespans
@@ -78,9 +79,8 @@ L.Timeline = L.GeoJSON.extend({
       return feature
     });
 
-    // data.features.forEach((feature) => {
+    // TODO Hack Refactor to combine with GeoJSONT map function above
     geoJSONT.forEach((feature) => {
-      // BCE date issue https://stackoverflow.com/questions/25846123/how-to-format-bc-dates-like-700-01-01/25846363#25846363
       const interval = this._getInterval(feature);
       if (!interval) { return; }
       this.ranges.insert(interval.start, interval.end, feature);
