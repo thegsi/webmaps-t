@@ -1,24 +1,10 @@
 function createVisTimeline(data){
 
-  // group = {
-  //     id: i,
-  //     content: 'Truck&nbsp;' + i
-  //   }
-  debugger;
-  var groups = new vis.DataSet()
-  data.features.forEach(function(feature, i){
-    group = {};
-    group['id'] = i;
-    group['content'] = feature.properties.name;
-    groups.add(group);
-  })
-
   // item = {
-  //   id: order + itemsPerGroup * truck,
-  //   group: truck,
+  //   id: i,
   //   start: start,
   //   end: end,
-  //   content: 'Order ' + order
+  //   content: ''
   // };
 
   var items = new vis.DataSet();
@@ -35,7 +21,6 @@ function createVisTimeline(data){
     }
 
     item['id'] = feature.properties.name + i
-    item['group'] = i
     item['content'] = feature.properties.name + i
 
     dates.push(item['end'])
@@ -62,5 +47,5 @@ function createVisTimeline(data){
 
   // create a Timeline
   var container = document.getElementById('vis-timeline');
-  timeline = new vis.Timeline(container, items, groups, options);
+  timeline = new vis.Timeline(container, items, options);
 }
