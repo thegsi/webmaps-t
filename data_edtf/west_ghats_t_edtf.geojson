@@ -1,0 +1,103 @@
+onLoadData({
+  "type": "FeatureCollection",
+  "features": [{
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [73.481, 18.729, 709]
+      },
+      "properties": {
+        "name": "Bhaja",
+        "Group": "Indrayani valley",
+        "startYear": "third century BCE",
+        "endYear": "200 CE",
+        "when": {
+          "timespans": [
+            {"start": "-0299/-0200" },
+            {"end": "0200"}
+          }],
+          "periods": [{
+              "name": "Early Historic",
+              "@id": "periodo:p08m57hd85k"
+            }
+          ],
+          "label": ""
+        },
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [73.884, 19.186, 782]
+      },
+      "properties": {
+        "name": "Junnar Ambika",
+        "Group": "Junnar",
+        "startYear": "second century BCE",
+        "endYear": "fifth century CE",
+        "when": {
+          "timespans": [{
+            "start": {"-0200/0400"}
+          }],
+          "periods": [{
+              "name": "Early Historic",
+              "@id": "periodo:p08m57hd85k"
+            }
+          ],
+          "label": ""
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [72.905, 19.208, 140]
+      },
+      "properties": {
+        "name": "Kanheri",
+        "Group": "Kanheri environs",
+        "startYear": "first century BCE to first century CE",
+        "endYear": "late first millennium",
+        "when": {
+          "timespans": [
+            {"start":"0100"},
+            {"end":"0900"}
+          }],
+          "periods": [{
+              "name": "Early Historic",
+              "@id": "periodo:p08m57hd85k"
+            }
+          ],
+          "label": ""
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [73.748, 19.941, 765]
+      },
+      "properties": {
+        "name": "Nasik Pandu Lena",
+        "Group": "Nasik",
+        "startYear": "second century BCE",
+        "endYear": "second century CE",
+        "when": {
+          "timespans": [{
+            "start": {"-0200"},
+            "end": {"0400"}
+          }],
+          "periods": [{
+              "name": "Early Historic",
+              "@id": "periodo:p08m57hd85k"
+            }
+          ],
+          "label": ""
+        }
+      }
+    }
+  ]
+})
