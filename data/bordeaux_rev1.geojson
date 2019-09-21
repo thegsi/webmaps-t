@@ -1,5 +1,5 @@
-{
-  "type": "FeatureCollection"
+onLoadData({
+  "type": "FeatureCollection",
   "attributes": {
     "lp_id": "lp_bordeaux",
     "description": "",
@@ -24,7 +24,7 @@
     ],
     "periods": [
       {
-        "name": "Late Roman", 
+        "name": "Late Roman",
         "uri": "https://test.perio.do/#/p/Canonical/periodCollections/p0gjgrs/?show_period=p0gjgrsr3qh"
       }
     ],
@@ -17531,4 +17531,4 @@
       "type": "Feature"
     }
   ]
-}
+})

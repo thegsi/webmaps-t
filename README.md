@@ -14,6 +14,8 @@ https://medium.com/pelagios/introducing-the-webmaps-t-working-group-7cff98021e42
 
 To serve using Python 2 `python serveit.py 8000`.
 
+To serve using Python 3 `python serveit3.py 8000`.
+
 Script prevents old files being kept in cache.
 
 Open browser and go to `http://localhost:8000/`.

@@ -1,0 +1,1772 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    "88.328126",
+                    "22.547875"
+                ]
+            },
+            "properties": {
+                "name": "none stated",
+                "when": {
+                    "timespans": [
+                        {
+                            "start": "1867"
+                        },
+                        {
+                            "end": "1867"
+                        }
+                    ],
+                    "periods": [
+                        {
+                            "name": "",
+                            "@id": ""
+                        }
+                    ],
+                    "label": ""
+                },
+                "address": "9 Hastings Street Calcutta"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    "88.363749",
+                    "22.569540"
+                ]
+            },
+            "properties": {
+                "name": "The Stanhope Press",
+                "when": {
+                    "timespans": [
+                        {
+                            "start": "1867"
+                        },
+                        {
+                            "end": "1867"
+                        }
+                    ],
+                    "periods": [
+                        {
+                            "name": "",
+                            "@id": ""
+                        }
+                    ],
+                    "label": ""
+                },
+                "address": "172 BB Ganguly Street"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    "88.346902",
+                    "22.570666"
+                ]
+            },
+            "properties": {
+                "name": "Calcutta Central Press",
+                "when": {
+                    "timespans": [
+                        {
+                            "start": "1867"
+                        },
+                        {
+                            "end": "1867"
+                        }
+                    ],
+                    "periods": [
+                        {
+                            "name": "",
+                            "@id": ""
+                        }
+                    ],
+                    "label": ""
+                },
+                "address": "5 Council House Street, Kolkata"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    "88.373096",
+                    "22.583017"
+                ]
+            },
+            "properties": {
+                "name": "New Bengalee Press",
+                "when": {
+                    "timespans": [
+                        {
+                            "start": "1868"
+                        },
+                        {
+                            "end": "1868"
+                        }
+                    ],
+                    "periods": [
+                        {
+                            "name": "",
+                            "@id": ""
+                        }
+                    ],
+                    "label": ""
+                },
+                "address": "15 Sukeas Street "
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    "88.371731",
+                    "22.573124"
+                ]
+            },
+            "properties": {
+                "name": "Baptist Mission Press",
+                "when": {
+                    "timespans": [
+                        {
+                            "start": "1868"
+                        },
+                        {
+                            "end": "1868"
+                        }
+                    ],
+                    "periods": [
+                        {
+                            "name": "",
+                            "@id": ""
+                        }
+                    ],
+                    "label": ""
+                },
+                "address": "21 Acharya Prafulla Chandra Road"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    "88.369041",
+                    "22.579038"
+                ]
+            },
+            "properties": {
+                "name": "Hindoo Patriot Press",
+                "when": {
+                    "timespans": [
+                        {
+                            "start": "1868"
+                        },
+                        {
+                            "end": "1868"
+                        }
+                    ],
+                    "periods": [
+                        {
+                            "name": "",
+                            "@id": ""
+                        }
+                    ],
+                    "label": ""
+                },
+                "address": "41 Amherst Street Calcutta"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    "88.353932",
+                    "22.597047"
+                ]
+            },
+            "properties": {
+                "name": "N L Seal's Press",
+                "when": {
+                    "timespans": [
+                        {
+                            "start": "1868"
+                        },
+                        {
+                            "end": "1868"
+                        }
+                    ],
+                    "periods": [
+                        {
+                            "name": "",
+                            "@id": ""
+                        }
+                    ],
+                    "label": ""
+                },
+                "address": "96, Ahiritola, Beniatola, Kolkata"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    "88.359376",
+                    "22.590673"
+                ]
+            },
+            "properties": {
+                "name": "Soodhanidhi Press",
+                "when": {
+                    "timespans": [
+                        {
+                            "start": "1869"
+                        },
+                        {
+                            "end": "1869"
+                        }
+                    ],
+                    "periods": [
+                        {
+                            "name": "",
+                            "@id": ""
+                        }
+                    ],
+                    "label": ""
+                },
+                "address": "241 Rabindra Sarani"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    "88.357983",
+                    "22.594178"
+                ]
+            },
+            "properties": {
+                "name": "Kubitarutnakur Press",
+                "when": {
+                    "timespans": [
+                        {
+                            "start": "1869"
+                        },
+                        {
+                            "end": "1869"
+                        }
+                    ],
+                    "periods": [
+                        {
+                            "name": "",
+                            "@id": ""
+                        }
+                    ],
+                    "label": ""
+                },
+                "address": "37, Brindabun Bysakh's Street"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    "88.357994",
+                    "22.592522"
+                ]
+            },
+            "properties": {
+                "name": "Gyanrutnakur Press",
+                "when": {
+                    "timespans": [
+                        {
+                            "start": "1869"
+                        },
+                        {
+                            "end": "1869"
+                        }
+                    ],
+                    "periods": [
+                        {
+                            "name": "",
+                            "@id": ""
+                        }
+                    ],
+                    "label": ""
+                },
+                "address": "32 Nimtuala Ghat Street "
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    "88.328819",
+                    "22.543733"
+                ]
+            },
+            "properties": {
+                "name": "none stated",
+                "when": {
+                    "timespans": [
+                        {
+                            "start": "1869"
+                        },
+                        {
+                            "end": "1869"
+                        }
+                    ],
+                    "periods": [
+                        {
+                            "name": "",
+                            "@id": ""
+                        }
+                    ],
+                    "label": ""
+                },
+                "address": "2 Hastings Street, Kolkata"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    "88.367940",
+                    "22.579093"
+                ]
+            },
+            "properties": {
+                "name": "B P M's Press",
+                "when": {
+                    "timespans": [
+                        {
+                            "start": "1869"
+                        },
+                        {
+                            "end": "1869"
+                        }
+                    ],
+                    "periods": [
+                        {
+                            "name": "",
+                            "@id": ""
+                        }
+                    ],
+                    "label": ""
+                },
+                "address": "15 Jhamapuker Lane"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    "88.360032",
+                    "22.582970"
+                ]
+            },
+            "properties": {
+                "name": "School Book Press",
+                "when": {
+                    "timespans": [
+                        {
+                            "start": "1869"
+                        },
+                        {
+                            "end": "1869"
+                        }
+                    ],
+                    "periods": [
+                        {
+                            "name": "",
+                            "@id": ""
+                        }
+                    ],
+                    "label": ""
+                },
+                "address": "45 Muktaram Babu St"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    "88.345612",
+                    "22.572297"
+                ]
+            },
+            "properties": {
+                "name": "Alexander Banks",
+                "when": {
+                    "timespans": [
+                        {
+                            "start": "1869"
+                        },
+                        {
+                            "end": "1869"
+                        }
+                    ],
+                    "periods": [
+                        {
+                            "name": "",
+                            "@id": ""
+                        }
+                    ],
+                    "label": ""
+                },
+                "address": "2 Hare Street, Kolkata"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    "88.352752",
+                    "22.570771"
+                ]
+            },
+            "properties": {
+                "name": "City Press",
+                "when": {
+                    "timespans": [
+                        {
+                            "start": "1869"
+                        },
+                        {
+                            "end": "1869"
+                        }
+                    ],
+                    "periods": [
+                        {
+                            "name": "",
+                            "@id": ""
+                        }
+                    ],
+                    "label": ""
+                },
+                "address": "10 Bentinck Street, Kolkata"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    "88.371480",
+                    "22.572693"
+                ]
+            },
+            "properties": {
+                "name": "Girish Vidyarutnu Press",
+                "when": {
+                    "timespans": [
+                        {
+                            "start": "1869"
+                        },
+                        {
+                            "end": "1869"
+                        }
+                    ],
+                    "periods": [
+                        {
+                            "name": "",
+                            "@id": ""
+                        }
+                    ],
+                    "label": ""
+                },
+                "address": "58 Acharya Prafulla Chandra Road"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    "88.348914",
+                    "22.545907"
+                ]
+            },
+            "properties": {
+                "name": "College Press",
+                "when": {
+                    "timespans": [
+                        {
+                            "start": "1870"
+                        },
+                        {
+                            "end": "1870"
+                        }
+                    ],
+                    "periods": [
+                        {
+                            "name": "",
+                            "@id": ""
+                        }
+                    ],
+                    "label": ""
+                },
+                "address": "8 Lord Sinha Road"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    "88.366612",
+                    "22.593161"
+                ]
+            },
+            "properties": {
+                "name": "Kubita Koumoodee Press",
+                "when": {
+                    "timespans": [
+                        {
+                            "start": "1870"
+                        },
+                        {
+                            "end": "1870"
+                        }
+                    ],
+                    "periods": [
+                        {
+                            "name": "",
+                            "@id": ""
+                        }
+                    ],
+                    "label": ""
+                },
+                "address": "1 Durga Charan Mittra Street"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    "88.359933",
+                    "22.591875"
+                ]
+            },
+            "properties": {
+                "name": "The Oriental Press",
+                "when": {
+                    "timespans": [
+                        {
+                            "start": "1870"
+                        },
+                        {
+                            "end": "1870"
+                        }
+                    ],
+                    "periods": [
+                        {
+                            "name": "",
+                            "@id": ""
+                        }
+                    ],
+                    "label": ""
+                },
+                "address": "300 Rabindra Sarani"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    "88.369697",
+                    "22.591955"
+                ]
+            },
+            "properties": {
+                "name": "The Sanscrit Press",
+                "when": {
+                    "timespans": [
+                        {
+                            "start": "1870"
+                        },
+                        {
+                            "end": "1870"
+                        }
+                    ],
+                    "periods": [
+                        {
+                            "name": "",
+                            "@id": ""
+                        }
+                    ],
+                    "label": ""
+                },
+                "address": "159 Bidhan Sarani"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    "88.359471",
+                    "22.541507"
+                ]
+            },
+            "properties": {
+                "name": "Bishop's College Press",
+                "when": {
+                    "timespans": [
+                        {
+                            "start": "1870"
+                        },
+                        {
+                            "end": "1870"
+                        }
+                    ],
+                    "periods": [
+                        {
+                            "name": "",
+                            "@id": ""
+                        }
+                    ],
+                    "label": ""
+                },
+                "address": "224 AJC Bose Road"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    "88.356644",
+                    "22.579076"
+                ]
+            },
+            "properties": {
+                "name": "Hurryhur Press",
+                "when": {
+                    "timespans": [
+                        {
+                            "start": "1870"
+                        },
+                        {
+                            "end": "1870"
+                        }
+                    ],
+                    "periods": [
+                        {
+                            "name": "",
+                            "@id": ""
+                        }
+                    ],
+                    "label": ""
+                },
+                "address": "100 Rabindra Sarani"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    "88.358791",
+                    "22.587963"
+                ]
+            },
+            "properties": {
+                "name": "The Bidyarutnu Press",
+                "when": {
+                    "timespans": [
+                        {
+                            "start": "1870"
+                        },
+                        {
+                            "end": "1870"
+                        }
+                    ],
+                    "periods": [
+                        {
+                            "name": "",
+                            "@id": ""
+                        }
+                    ],
+                    "label": ""
+                },
+                "address": "246 Rabindra Sarani"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    "88.358357",
+                    "22.587273"
+                ]
+            },
+            "properties": {
+                "name": "Choitunno Chundrodoy Press",
+                "when": {
+                    "timespans": [
+                        {
+                            "start": "1871"
+                        },
+                        {
+                            "end": "1871"
+                        }
+                    ],
+                    "periods": [
+                        {
+                            "name": "",
+                            "@id": ""
+                        }
+                    ],
+                    "label": ""
+                },
+                "address": "245 Rabindra Sarani"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    "88.346721",
+                    "22.572325"
+                ]
+            },
+            "properties": {
+                "name": "Indian Daily News Press",
+                "when": {
+                    "timespans": [
+                        {
+                            "start": "1871"
+                        },
+                        {
+                            "end": "1871"
+                        }
+                    ],
+                    "periods": [
+                        {
+                            "name": "",
+                            "@id": ""
+                        }
+                    ],
+                    "label": ""
+                },
+                "address": "6 Bankshall Street, Kolkata"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    "88.360915",
+                    "22.592241"
+                ]
+            },
+            "properties": {
+                "name": "Gyan Deepuk Press",
+                "when": {
+                    "timespans": [
+                        {
+                            "start": "1871"
+                        },
+                        {
+                            "end": "1871"
+                        }
+                    ],
+                    "periods": [
+                        {
+                            "name": "",
+                            "@id": ""
+                        }
+                    ],
+                    "label": ""
+                },
+                "address": "268 Garanhata Street"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    "88.204084",
+                    "23.067027"
+                ]
+            },
+            "properties": {
+                "name": "Boodhodoy Press",
+                "when": {
+                    "timespans": [
+                        {
+                            "start": "1871"
+                        },
+                        {
+                            "end": "1871"
+                        }
+                    ],
+                    "periods": [
+                        {
+                            "name": "",
+                            "@id": ""
+                        }
+                    ],
+                    "label": ""
+                },
+                "address": "Aima, Hoogly"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    "88.360154",
+                    "22.587534"
+                ]
+            },
+            "properties": {
+                "name": "Soodhasindhoo Press",
+                "when": {
+                    "timespans": [
+                        {
+                            "start": "1871"
+                        },
+                        {
+                            "end": "1871"
+                        }
+                    ],
+                    "periods": [
+                        {
+                            "name": "",
+                            "@id": ""
+                        }
+                    ],
+                    "label": ""
+                },
+                "address": "33 Balaram Dey Street"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    "88.353597",
+                    "22.567565"
+                ]
+            },
+            "properties": {
+                "name": "Royal Press",
+                "when": {
+                    "timespans": [
+                        {
+                            "start": "1871"
+                        },
+                        {
+                            "end": "1871"
+                        }
+                    ],
+                    "periods": [
+                        {
+                            "name": "",
+                            "@id": ""
+                        }
+                    ],
+                    "label": ""
+                },
+                "address": "2 Prafulla Sakar"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    "87.319190",
+                    "22.432825"
+                ]
+            },
+            "properties": {
+                "name": "none stated",
+                "when": {
+                    "timespans": [
+                        {
+                            "start": "1871"
+                        },
+                        {
+                            "end": "1871"
+                        }
+                    ],
+                    "periods": [
+                        {
+                            "name": "",
+                            "@id": ""
+                        }
+                    ],
+                    "label": ""
+                },
+                "address": "Midnapore"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    "87.189226",
+                    "22.908040"
+                ]
+            },
+            "properties": {
+                "name": "none stated",
+                "when": {
+                    "timespans": [
+                        {
+                            "start": "1871"
+                        },
+                        {
+                            "end": "1871"
+                        }
+                    ],
+                    "periods": [
+                        {
+                            "name": "",
+                            "@id": ""
+                        }
+                    ],
+                    "label": ""
+                },
+                "address": "Arrah, West Bengal"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    "90.411101",
+                    "23.812655"
+                ]
+            },
+            "properties": {
+                "name": "Bengalee Press, Dacca",
+                "when": {
+                    "timespans": [
+                        {
+                            "start": "1871"
+                        },
+                        {
+                            "end": "1871"
+                        }
+                    ],
+                    "periods": [
+                        {
+                            "name": "",
+                            "@id": ""
+                        }
+                    ],
+                    "label": ""
+                },
+                "address": "Babu Bazar, Dhaka"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    "88.368029",
+                    "22.580511"
+                ]
+            },
+            "properties": {
+                "name": "The New Sanscrit Press",
+                "when": {
+                    "timespans": [
+                        {
+                            "start": "1871"
+                        },
+                        {
+                            "end": "1871"
+                        }
+                    ],
+                    "periods": [
+                        {
+                            "name": "",
+                            "@id": ""
+                        }
+                    ],
+                    "label": ""
+                },
+                "address": "11 Bechu Chatterjee Street"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    "88.356889",
+                    "22.595127"
+                ]
+            },
+            "properties": {
+                "name": "The Hindoo Press",
+                "when": {
+                    "timespans": [
+                        {
+                            "start": "1871"
+                        },
+                        {
+                            "end": "1871"
+                        }
+                    ],
+                    "periods": [
+                        {
+                            "name": "",
+                            "@id": ""
+                        }
+                    ],
+                    "label": ""
+                },
+                "address": "92 Ahiritola"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    "90.394538",
+                    "23.714237"
+                ]
+            },
+            "properties": {
+                "name": "Soolubh Press",
+                "when": {
+                    "timespans": [
+                        {
+                            "start": "1871"
+                        },
+                        {
+                            "end": "1871"
+                        }
+                    ],
+                    "periods": [
+                        {
+                            "name": "",
+                            "@id": ""
+                        }
+                    ],
+                    "label": ""
+                },
+                "address": "Baboo Bazar, Dacca"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    "88.361426",
+                    "22.568483"
+                ]
+            },
+            "properties": {
+                "name": "The Bengal Superior Press",
+                "when": {
+                    "timespans": [
+                        {
+                            "start": "1871"
+                        },
+                        {
+                            "end": "1871"
+                        }
+                    ],
+                    "periods": [
+                        {
+                            "name": "",
+                            "@id": ""
+                        }
+                    ],
+                    "label": ""
+                },
+                "address": "7 Syakra Para Lane"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    "88.360954",
+                    "22.585874"
+                ]
+            },
+            "properties": {
+                "name": "The Hitoishee Press",
+                "when": {
+                    "timespans": [
+                        {
+                            "start": "1871"
+                        },
+                        {
+                            "end": "1871"
+                        }
+                    ],
+                    "periods": [
+                        {
+                            "name": "",
+                            "@id": ""
+                        }
+                    ],
+                    "label": ""
+                },
+                "address": "45 Baranasi Ghosh Street"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    "88.360923",
+                    "22.585427"
+                ]
+            },
+            "properties": {
+                "name": "The Gooptu Press",
+                "when": {
+                    "timespans": [
+                        {
+                            "start": "1871"
+                        },
+                        {
+                            "end": "1871"
+                        }
+                    ],
+                    "periods": [
+                        {
+                            "name": "",
+                            "@id": ""
+                        }
+                    ],
+                    "label": ""
+                },
+                "address": "52 Baranasi Ghosh Street"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    "88.366451",
+                    "22.606188"
+                ]
+            },
+            "properties": {
+                "name": "The Indian Mirror Press",
+                "when": {
+                    "timespans": [
+                        {
+                            "start": "1872"
+                        },
+                        {
+                            "end": "1872"
+                        }
+                    ],
+                    "periods": [
+                        {
+                            "name": "",
+                            "@id": ""
+                        }
+                    ],
+                    "label": ""
+                },
+                "address": "800 Rabindra Sarani"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    "88.345764",
+                    "22.571665"
+                ]
+            },
+            "properties": {
+                "name": "none stated",
+                "when": {
+                    "timespans": [
+                        {
+                            "start": "1872"
+                        },
+                        {
+                            "end": "1872"
+                        }
+                    ],
+                    "periods": [
+                        {
+                            "name": "",
+                            "@id": ""
+                        }
+                    ],
+                    "label": ""
+                },
+                "address": "2 BBD Bagh"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    "88.369838",
+                    "22.572625"
+                ]
+            },
+            "properties": {
+                "name": "The Prakritn Press",
+                "when": {
+                    "timespans": [
+                        {
+                            "start": "1872"
+                        },
+                        {
+                            "end": "1872"
+                        }
+                    ],
+                    "periods": [
+                        {
+                            "name": "",
+                            "@id": ""
+                        }
+                    ],
+                    "label": ""
+                },
+                "address": "1 Ramnath Biswas Lane"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    "88.356787",
+                    "22.594896"
+                ]
+            },
+            "properties": {
+                "name": "The Bengalee Printing Press",
+                "when": {
+                    "timespans": [
+                        {
+                            "start": "1872"
+                        },
+                        {
+                            "end": "1872"
+                        }
+                    ],
+                    "periods": [
+                        {
+                            "name": "",
+                            "@id": ""
+                        }
+                    ],
+                    "label": ""
+                },
+                "address": "80 Ahiritola Street"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    "88.367716",
+                    "22.574428"
+                ]
+            },
+            "properties": {
+                "name": "Kabyuprukash Press",
+                "when": {
+                    "timespans": [
+                        {
+                            "start": "1872"
+                        },
+                        {
+                            "end": "1872"
+                        }
+                    ],
+                    "periods": [
+                        {
+                            "name": "",
+                            "@id": ""
+                        }
+                    ],
+                    "label": ""
+                },
+                "address": "34, Amherst Street"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    "88.354183",
+                    "22.571516"
+                ]
+            },
+            "properties": {
+                "name": "Britannia Press",
+                "when": {
+                    "timespans": [
+                        {
+                            "start": "1872"
+                        },
+                        {
+                            "end": "1872"
+                        }
+                    ],
+                    "periods": [
+                        {
+                            "name": "",
+                            "@id": ""
+                        }
+                    ],
+                    "label": ""
+                },
+                "address": "13, BB Ganguly Street"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    "88.328194",
+                    "22.547894"
+                ]
+            },
+            "properties": {
+                "name": "Bengal Printing Company",
+                "when": {
+                    "timespans": [
+                        {
+                            "start": "1872"
+                        },
+                        {
+                            "end": "1872"
+                        }
+                    ],
+                    "periods": [
+                        {
+                            "name": "",
+                            "@id": ""
+                        }
+                    ],
+                    "label": ""
+                },
+                "address": "4 Hastings Street, 5 Hastings Street, 8 Hastings Street"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    "88.344192",
+                    "22.568233"
+                ]
+            },
+            "properties": {
+                "name": "none stated",
+                "when": {
+                    "timespans": [
+                        {
+                            "start": "1873"
+                        },
+                        {
+                            "end": "1873"
+                        }
+                    ],
+                    "periods": [
+                        {
+                            "name": "",
+                            "@id": ""
+                        }
+                    ],
+                    "label": ""
+                },
+                "address": "6 BBD Bagh"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    "88.371042",
+                    "22.570956"
+                ]
+            },
+            "properties": {
+                "name": "none stated",
+                "when": {
+                    "timespans": [
+                        {
+                            "start": "1873"
+                        },
+                        {
+                            "end": "1873"
+                        }
+                    ],
+                    "periods": [
+                        {
+                            "name": "",
+                            "@id": ""
+                        }
+                    ],
+                    "label": ""
+                },
+                "address": "34 Acharya Prafulla, Chandra Road"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    "88.368338",
+                    "22.573072"
+                ]
+            },
+            "properties": {
+                "name": "none stated",
+                "when": {
+                    "timespans": [
+                        {
+                            "start": "1873"
+                        },
+                        {
+                            "end": "1873"
+                        }
+                    ],
+                    "periods": [
+                        {
+                            "name": "",
+                            "@id": ""
+                        }
+                    ],
+                    "label": ""
+                },
+                "address": "15 Pataldanga Street, Kolkata"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    "88.363793",
+                    "22.569346"
+                ]
+            },
+            "properties": {
+                "name": "Thacker, Spink and Co.",
+                "when": {
+                    "timespans": [
+                        {
+                            "start": "1873"
+                        },
+                        {
+                            "end": "1873"
+                        }
+                    ],
+                    "periods": [
+                        {
+                            "name": "",
+                            "@id": ""
+                        }
+                    ],
+                    "label": ""
+                },
+                "address": "1 Pannalal Banerjee Lane, Kolkata "
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    "88.352554",
+                    "22.568354"
+                ]
+            },
+            "properties": {
+                "name": "none stated",
+                "when": {
+                    "timespans": [
+                        {
+                            "start": "1873"
+                        },
+                        {
+                            "end": "1873"
+                        }
+                    ],
+                    "periods": [
+                        {
+                            "name": "",
+                            "@id": ""
+                        }
+                    ],
+                    "label": ""
+                },
+                "address": "1 Bentinck Street"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    "88.367416",
+                    "22.573770"
+                ]
+            },
+            "properties": {
+                "name": "Judoogopal Chuttopadhyayu and Co.'s Press",
+                "when": {
+                    "timespans": [
+                        {
+                            "start": "1873"
+                        },
+                        {
+                            "end": "1873"
+                        }
+                    ],
+                    "periods": [
+                        {
+                            "name": "",
+                            "@id": ""
+                        }
+                    ],
+                    "label": ""
+                },
+                "address": "22, Amherst Street, College Row"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    "88.327364",
+                    "22.522239"
+                ]
+            },
+            "properties": {
+                "name": "Arjyuma Press",
+                "when": {
+                    "timespans": [
+                        {
+                            "start": "1873"
+                        },
+                        {
+                            "end": "1873"
+                        }
+                    ],
+                    "periods": [
+                        {
+                            "name": "",
+                            "@id": ""
+                        }
+                    ],
+                    "label": ""
+                },
+                "address": "147 Burdwan Road, Alipore, Calcutta"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    "88.344999",
+                    "22.570137"
+                ]
+            },
+            "properties": {
+                "name": "P S. D'Rozario & Co.",
+                "when": {
+                    "timespans": [
+                        {
+                            "start": "1873"
+                        },
+                        {
+                            "end": "1873"
+                        }
+                    ],
+                    "periods": [
+                        {
+                            "name": "",
+                            "@id": ""
+                        }
+                    ],
+                    "label": ""
+                },
+                "address": "8 BBD Bagh"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    "88.348905",
+                    "22.567406"
+                ]
+            },
+            "properties": {
+                "name": "Thacker, Spink and Co.",
+                "when": {
+                    "timespans": [
+                        {
+                            "start": "1873"
+                        },
+                        {
+                            "end": "1873"
+                        }
+                    ],
+                    "periods": [
+                        {
+                            "name": "",
+                            "@id": ""
+                        }
+                    ],
+                    "label": ""
+                },
+                "address": "5 Marx Engels Beethi Road, Kolkata"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    "88.350853",
+                    "22.567714"
+                ]
+            },
+            "properties": {
+                "name": "Asiatic Lithographic Press, T. Black and Co.",
+                "when": {
+                    "timespans": [
+                        {
+                            "start": "1873"
+                        },
+                        {
+                            "end": "1873"
+                        }
+                    ],
+                    "periods": [
+                        {
+                            "name": "",
+                            "@id": ""
+                        }
+                    ],
+                    "label": ""
+                },
+                "address": "4 Nawab Siraj-ud-daula Sarani, Kolkata "
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    "88.359930",
+                    "22.558371"
+                ]
+            },
+            "properties": {
+                "name": "Printed at either the Society for diffusion of knowledge\nor the Muzhoor Uzaib Press",
+                "when": {
+                    "timespans": [
+                        {
+                            "start": "1873"
+                        },
+                        {
+                            "end": "1873"
+                        }
+                    ],
+                    "periods": [
+                        {
+                            "name": "",
+                            "@id": ""
+                        }
+                    ],
+                    "label": ""
+                },
+                "address": "16 Dedar Bux's Lane"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    "88.363158",
+                    "22.557973"
+                ]
+            },
+            "properties": {
+                "name": "none stated",
+                "when": {
+                    "timespans": [
+                        {
+                            "start": "1873"
+                        },
+                        {
+                            "end": "1873"
+                        }
+                    ],
+                    "periods": [
+                        {
+                            "name": "",
+                            "@id": ""
+                        }
+                    ],
+                    "label": ""
+                },
+                "address": "13 Gardner Lane, Taltala, Kolkata"
+            }
+        }
+    ]
+}
