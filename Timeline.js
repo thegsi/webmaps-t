@@ -71,11 +71,28 @@ L.Timeline = L.GeoJSON.extend({
     var geoJSONT = data.features.map(function(feature){
       if (feature.properties.when && feature.properties.when.timespans.length) {
          var spans = feature.properties.when.timespans
-         if (spans[0].start.in) feature.properties['start'] = spans[0].start.in
-         if (spans[0].end.in) feature.properties['end'] = spans[0].end.in
-         if (spans[0].start.earliest) feature.properties['start'] = spans[0].start.earliest
-         if (spans[0].end.latest) feature.properties['end'] = spans[0].end.latest
+         if (spans[0].start){
+           if (spans[0].start.in) {
+             feature.properties['start'] = spans[0].start.in
+           } else if (spans[0].start.earliest) {
+             feature.properties['start'] = spans[0].start.earliest
+           } else {
+             feature.properties['start'] = spans[0].start
+           }
+         }
+         if (spans[0].end){
+           if (spans[0].end.in) {
+             feature.properties['end'] = spans[0].end.in
+           } else if (spans[0].end.latest) {
+             feature.properties['end'] = spans[0].end.latest
+           } else {
+             feature.properties['end'] = spans[0].end
+           }
+         }
       }
+      feature.properties['start'] = parseInt(feature.properties['start'])
+      feature.properties['end'] = parseInt(feature.properties['end'])
+      
       return feature
     });
 
@@ -87,7 +104,6 @@ L.Timeline = L.GeoJSON.extend({
       this.times.push(interval.start);
       this.times.push(interval.end);
 
-      // TODO Why is this undefined? Add timespans[0] to timespans array
       // if (feature.properties.when.timespans[0].start.earliest) this.timespans.push(spans[0])
       start = Math.min(start, interval.start);
       end = Math.max(end, interval.end);

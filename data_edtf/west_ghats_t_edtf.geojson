@@ -15,7 +15,7 @@ onLoadData({
           "timespans": [
             {"start": "-0299/-0200" },
             {"end": "0200"}
-          }],
+          ],
           "periods": [{
               "name": "Early Historic",
               "@id": "periodo:p08m57hd85k"
@@ -38,7 +38,7 @@ onLoadData({
         "endYear": "fifth century CE",
         "when": {
           "timespans": [{
-            "start": {"-0200/0400"}
+            "start": "-0200/0400"
           }],
           "periods": [{
               "name": "Early Historic",
@@ -64,7 +64,7 @@ onLoadData({
           "timespans": [
             {"start":"0100"},
             {"end":"0900"}
-          }],
+          ],
           "periods": [{
               "name": "Early Historic",
               "@id": "periodo:p08m57hd85k"
@@ -87,8 +87,8 @@ onLoadData({
         "endYear": "second century CE",
         "when": {
           "timespans": [{
-            "start": {"-0200"},
-            "end": {"0400"}
+            "start": "-0200",
+            "end": "0400"
           }],
           "periods": [{
               "name": "Early Historic",
