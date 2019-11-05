@@ -6,7 +6,7 @@ Display arbitrary GeoJSON on a map with a timeline slider and play button
 
 Combine with https://github.com/visjs/vis-timeline
 
-For the purposes of the hack funded by Pelagios project outlined here:
+For the purposes of the hack funded by Pelagios project and held at the British Liobrary September 2019 outlined here:
 https://medium.com/pelagios/introducing-the-webmaps-t-working-group-7cff98021e42
 
 ### Instructions
