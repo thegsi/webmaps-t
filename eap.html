@@ -1,0 +1,126 @@
+<html>
+
+<head>
+  <title>British Library projects</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin="" />
+  <link href="./leaflet.timeline.css" rel="stylesheet" type="text/css" />
+  <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js" integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og==" crossorigin=""></script>
+  <script src="./IntervalTree.js"></script>
+  <script src="./Timeline.js"></script>
+  <script src="./TimelineSliderControl.js"></script>
+  <script src="./VisTimeline.js"></script>
+  <script src="./moment.min.js"></script>
+  <script src="https://d3js.org/d3.v3.min.js"></script>
+  <link href="./vis-timeline-graph2d.min.css" rel="stylesheet" type="text/css" />
+  <script src="./vis-timeline-graph2d.min.js"></script>
+
+  <style>
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    #map {
+      width: 100vw;
+      height: 100vh;
+    }
+
+    .leaflet-bottom.leaflet-left {
+      width: 100%;
+    }
+
+    .leaflet-control-container .leaflet-timeline-controls {
+      box-sizing: border-box;
+      width: 100%;
+      margin: 0;
+      margin-bottom: 15px;
+    }
+
+    table,
+    th,
+    td {
+      background-color: white;
+      border: 5px solid black;
+      border-collapse: collapse;
+      height: 30px;
+      width: 100%;
+      padding: 0;
+    }
+
+    /* .vis-t {
+      height: 400px;
+    } */
+
+    .time-slider {
+      width: 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="map"></div>
+
+  <script>
+    // function getColorFor(str) { // java String#hashCode
+    //   var hash = 0;
+    //   for (var i = 0; i < str.length; i++) {
+    //     hash = str.charCodeAt(i) + ((hash << 5) - hash);
+    //   }
+    //   var red = (hash >> 24) & 0xff;
+    //   var grn = (hash >> 16) & 0xff;
+    //   var blu = (hash >>  8) & 0xff;
+    //   return 'rgb(' + red + ',' + grn + ',' + blu + ')';
+    // }
+    var osmUrl = 'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
+    var osmAttrib = '&copy; <a href="http://openstreetmap.org/copyright">OpenStreetMap</a> contributors';
+    var osm = L.tileLayer(osmUrl, {
+      maxZoom: 18,
+      attribution: osmAttrib
+    });
+    var map = L.map('map', {
+      layers: [osm],
+      center: new L.LatLng(18.3, 73.5),
+      zoom: 2
+    });
+    var timeline;
+    var timelineControl;
+
+    function onLoadData(data) {
+      timeline = L.timeline(data, {
+        style: function(data) {
+          return {
+            stroke: false,
+            // color: getColorFor(data.properties.name),
+            color: 'black',
+            fillOpacity: 0.5
+          }
+        },
+        waitToUpdateMap: true,
+        onEachFeature: function(feature, layer) {
+          layer.bindTooltip(feature.properties.name);
+
+        }
+      });
+
+      timelineControl = L.timelineSliderControl({
+        formatOutput: function(date) {
+          date = new Date(date)
+          var day = date.getDate();
+          var monthIndex = date.getMonth();
+          var year = date.getFullYear();
+          return `${day}/${monthIndex}/${year}`
+        },
+        enableKeyboardControls: true,
+      });
+      timeline.addTo(map);
+      timelineControl.addTo(map);
+      timelineControl.addTimelines(timeline);
+      createVisTimeline(data, 'histogram');
+    }
+
+  </script>
+  <script src="./data/BL_EAP.json"></script>
+</body>
+
+</html>
