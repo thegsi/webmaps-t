@@ -99,6 +99,7 @@
         waitToUpdateMap: true,
         onEachFeature: function(feature, layer) {
           layer.bindTooltip(feature.properties.name);
+          if (feature.properties.link) layer.bindPopup('Click here <a href="' + feature.properties.link + '">' + feature.properties.link + '</a>' );
 
         }
       });
