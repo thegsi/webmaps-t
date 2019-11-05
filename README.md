@@ -19,3 +19,17 @@ To serve using Python 3 `python serveit3.py 8000`.
 Script prevents old files being kept in cache.
 
 Open browser and go to `http://localhost:8000/`.
+
+### Example Apps
+
+Georeferencer data
+
+https://pelagios.org/Leaflet.timeline.webmapst/georeferencer.html
+
+Endangered Archives Programme
+
+https://pelagios.org/Leaflet.timeline.webmapst/eap.html
+
+Rock-cut Caves of the Western Ghats
+
+https://pelagios.org/Leaflet.timeline.webmapst/index.html
