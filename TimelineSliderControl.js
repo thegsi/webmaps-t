@@ -249,25 +249,25 @@ L.TimelineSliderControl = L.Control.extend({
     });
 
     // Thegsi code. Add table with marks for temporal divisions
-    var max = this._timeSlider.max
-    var min = this._timeSlider.min
-    var width = max - min;
-    var times = this._getTimes();
-
-    times.forEach((time, i) => {
-      var timeClass = 'time-' + time
-      L.DomUtil.create('td', timeClass, this.timeVisualise);
-      var cell = time - times[i-1] || 0
-      var cellPercent = cell / width * 100;
-      var cellPercentAdj = cellPercent
-
-      d3.select('.' + timeClass)
-          // .style('width', function() { return 1 / length * 100 + "%"; })
-          .style('width', cellPercentAdj.toFixed(2).toString() + '%')
-          .style('height', '100%')
-          .style('background-color', 'white')
-
-    });
+    // var max = this._timeSlider.max
+    // var min = this._timeSlider.min
+    // var width = max - min;
+    // var times = this._getTimes();
+    //
+    // times.forEach((time, i) => {
+    //   var timeClass = 'time-' + time
+    //   L.DomUtil.create('td', timeClass, this.timeVisualise);
+    //   var cell = time - times[i-1] || 0
+    //   var cellPercent = cell / width * 100;
+    //   var cellPercentAdj = cellPercent
+    //
+    //   d3.select('.' + timeClass)
+    //       // .style('width', function() { return 1 / length * 100 + "%"; })
+    //       .style('width', cellPercentAdj.toFixed(2).toString() + '%')
+    //       .style('height', '100%')
+    //       .style('background-color', 'white')
+    //
+    // });
   },
 
   /**
