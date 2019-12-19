@@ -107,7 +107,8 @@ function createVisTimeline(data, visualisation){
         style:'bar',
         barChart: {width:50, align:'center'}, // align: left, center, right
         drawPoints: false,
-        maxHeight: 400,
+        // maxHeight: 300,
+        height: '200px',
         dataAxis: {
             icons:true
         },
