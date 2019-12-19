@@ -57,41 +57,28 @@ function createVisTimeline(data, visualisation){
     bin = {}
 
     data.features.forEach(function(feature, i){
-
-      item = {}
       if (feature.properties.when && feature.properties.when.timespans.length) {
          var spans = feature.properties.when.timespans
          if (spans[0].start) {
-           formatDate = moment(spans[0].start).format('YYYY-MM-DD');
+           // Works for years only
+           formatDate = moment(spans[0].start).format('YYYY');
            if (!bin[formatDate]) {
              bin[formatDate] = 1
            } else {
              bin[formatDate] += 1
            }
-           item['start'] = new Date().setYear(spans[0].start)
          }
-         // if (spans[0].end) item['end'] = new Date().setYear(spans[0].start.in)
-         // if (spans[0].end) item['start'] = new Date().setYear(spans[0].start.in)
-         // if (spans[0].start.in) item['start'] = new Date().setYear(spans[0].start.in)
-         // if (spans[0].end.in) item['end'] = new Date().setYear(spans[0].end.in)
-         // if (spans[0].start.earliest) item['start'] = new Date().setYear(spans[0].start.earliest)
-         // if (spans[0].end.latest) item['end'] = new Date().setYear(spans[0].end.latest)
       }
-
-      // item['id'] = feature.properties.title + i
-      // item['content'] = feature.properties.title + i
-      //
-      // dates.push(item['end'])
-      // dates.push(item['start'])
-      // items.add(item);
     })
 
     var items = Object.keys(bin).map(function(date, i) {
       return {
         x: date,
+        end: String(parseInt(date) + 1),
         y: bin[date]
       }
     });
+    debugger;
 
     function sortByKey(array, key) {
       return array.sort(function(a, b) {
@@ -105,13 +92,14 @@ function createVisTimeline(data, visualisation){
 
     var options = {
         style:'bar',
-        barChart: {width:50, align:'center'}, // align: left, center, right
+        // barChart: {width:50, align:'center'}, // align: left, center, right
         drawPoints: false,
         // maxHeight: 300,
         height: '200px',
-        dataAxis: {
-            icons:true
-        },
+        padding: '0px',
+        // dataAxis: {
+        //     icons:true
+        // },
         orientation:'top',
         start: items[0].x,
         end: items[items.length - 1].x
