@@ -78,7 +78,6 @@ function createVisTimeline(data, visualisation){
         y: bin[date]
       }
     });
-    debugger;
 
     function sortByKey(array, key) {
       return array.sort(function(a, b) {
@@ -96,13 +95,12 @@ function createVisTimeline(data, visualisation){
         drawPoints: false,
         // maxHeight: 300,
         height: '200px',
-        padding: '0px',
         // dataAxis: {
         //     icons:true
         // },
         orientation:'top',
         start: items[0].x,
-        end: items[items.length - 1].x
+        end: items[items.length - 1].end
     };
 
     var container = document.getElementById('vis-timeline');
