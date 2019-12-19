@@ -105,6 +105,10 @@ function createVisTimeline(data, visualisation){
 
     var container = document.getElementById('vis-timeline');
     timeline = new vis.Graph2d(container, items, options);
+    d3.select('.vis-t')
+        // .style('width', function() { return 1 / length * 100 + "%"; })
+        .style('margin-left', '-40px')
+        .style('background-color', 'white')
   }
 
 
