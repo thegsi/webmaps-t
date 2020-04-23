@@ -69,6 +69,7 @@ L.Timeline = L.GeoJSON.extend({
 
     // TODO Hack Refactor to combine with forEach below
     var geoJSONT = data.features.map(function(feature){
+      
       if (feature.properties.when && feature.properties.when.timespans.length) {
          var spans = feature.properties.when.timespans
          if (spans[0].start){
@@ -92,7 +93,7 @@ L.Timeline = L.GeoJSON.extend({
       }
       feature.properties['start'] = parseInt(feature.properties['start'])
       feature.properties['end'] = parseInt(feature.properties['end'])
-      
+
       return feature
     });
 

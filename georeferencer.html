@@ -1,18 +1,18 @@
 <html>
 
 <head>
-  <title>Western Ghats Caves</title>
+  <title>British Library projects</title>
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin="" />
   <link href="./leaflet.timeline.css" rel="stylesheet" type="text/css" />
-  <link href="./vis-timeline-graph2d.min.css" rel="stylesheet" type="text/css" />
-  <script src="./vis-timeline-graph2d.min.js"></script>
   <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js" integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og==" crossorigin=""></script>
-  <script src="./moment.min.js"></script>
-  <script src="https://d3js.org/d3.v3.min.js"></script>
   <script src="./IntervalTree.js"></script>
   <script src="./Timeline.js"></script>
   <script src="./TimelineSliderControl.js"></script>
   <script src="./VisTimeline.js"></script>
+  <script src="./moment.min.js"></script>
+  <script src="https://d3js.org/d3.v3.min.js"></script>
+  <link href="./vis-timeline-graph2d.min.css" rel="stylesheet" type="text/css" />
+  <script src="./vis-timeline-graph2d.min.js"></script>
 
   <style>
     html,
@@ -81,7 +81,7 @@
     var map = L.map('map', {
       layers: [osm],
       center: new L.LatLng(18.3, 73.5),
-      zoom: 8
+      zoom: 2
     });
     var timeline;
     var timelineControl;
@@ -99,6 +99,8 @@
         waitToUpdateMap: true,
         onEachFeature: function(feature, layer) {
           layer.bindTooltip(feature.properties.name);
+          if (feature.properties.link) layer.bindPopup('Click here <a href="' + feature.properties.link + '">' + feature.properties.link + '</a>' );
+          if (feature.properties.institution) layer.bindPopup(feature.properties.institution);
         }
       });
 
@@ -115,12 +117,11 @@
       timeline.addTo(map);
       timelineControl.addTo(map);
       timelineControl.addTimelines(timeline);
-      createVisTimeline(data, 'horizontal');
+      createVisTimeline(data, 'histogram');
     }
 
   </script>
-  <script src="./data/west_ghats_t.geojson"></script>
-
+  <script src="./data/BL_Klokan_zoomify.json"></script>
 </body>
 
 </html>
