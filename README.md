@@ -1,8 +1,8 @@
 
-## Web Maps-T
+## webmaps-t
 
-Forked from https://github.com/skeate/Leaflet.timeline
-Display arbitrary GeoJSON on a map with a timeline slider and play button
+Forked from https://github.com/skeate/Leaflet.timeline. 
+Display arbitrary [GeoJSON-T](https://github.com/kgeographer/geojson-t) on a map with a timeline slider and play button
 
 Combine with https://github.com/visjs/vis-timeline
 
