@@ -1,10 +1,11 @@
 
 ## webmaps-t
 
-Forked from https://github.com/skeate/Leaflet.timeline. 
+Forked from https://github.com/skeate/Leaflet.timeline.
 Display arbitrary [GeoJSON-T](https://github.com/kgeographer/geojson-t) on a map with a timeline slider and play button
 
 Combine with https://github.com/visjs/vis-timeline
+Bar chart https://visjs.github.io/vis-timeline/examples/graph2d/02_bars.html
 
 For the purposes of the hack funded by Pelagios project and held at the British Liobrary September 2019 outlined here:
 https://medium.com/pelagios/introducing-the-webmaps-t-working-group-7cff98021e42
