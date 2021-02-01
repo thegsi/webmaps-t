@@ -6,28 +6,28 @@ onLoadData({
         "type": "Point",
         "coordinates": [73.481, 18.729, 709]
       },
+      "when": {
+        "timespans": [{
+          "start": {
+            "earliest": "-299",
+            "latest": "-200"
+          },
+          "end": {
+            "in": "0200"
+          }
+        }],
+        "periods": [{
+            "name": "Early Historic",
+            "@id": "periodo:p08m57hd85k"
+          }
+        ],
+        "label": ""
+      },
       "properties": {
         "name": "Bhaja",
         "Group": "Indrayani valley",
         "startYear": "third century BCE",
-        "endYear": "200 CE",
-        "when": {
-          "timespans": [{
-            "start": {
-              "earliest": "-299",
-              "latest": "-200"
-            },
-            "end": {
-              "in": "0200"
-            }
-          }],
-          "periods": [{
-              "name": "Early Historic",
-              "@id": "periodo:p08m57hd85k"
-            }
-          ],
-          "label": ""
-        },
+        "endYear": "200 CE"
       }
     },
     {
@@ -36,27 +36,27 @@ onLoadData({
         "type": "Point",
         "coordinates": [73.884, 19.186, 782]
       },
+      "when": {
+        "timespans": [{
+          "start": {
+            "in": "-0200"
+          },
+          "end": {
+            "in": "0400"
+          }
+        }],
+        "periods": [{
+            "name": "Early Historic",
+            "@id": "periodo:p08m57hd85k"
+          }
+        ],
+        "label": ""
+      },
       "properties": {
         "name": "Junnar Ambika",
         "Group": "Junnar",
         "startYear": "second century BCE",
-        "endYear": "fifth century CE",
-        "when": {
-          "timespans": [{
-            "start": {
-              "in": "-0200"
-            },
-            "end": {
-              "in": "0400"
-            }
-          }],
-          "periods": [{
-              "name": "Early Historic",
-              "@id": "periodo:p08m57hd85k"
-            }
-          ],
-          "label": ""
-        }
+        "endYear": "fifth century CE"
       }
     },
     {
@@ -65,27 +65,27 @@ onLoadData({
         "type": "Point",
         "coordinates": [72.905, 19.208, 140]
       },
+      "when": {
+        "timespans": [{
+          "start": {
+            "in": "0100"
+          },
+          "end": {
+            "in": "0900"
+          }
+        }],
+        "periods": [{
+            "name": "Early Historic",
+            "@id": "periodo:p08m57hd85k"
+          }
+        ],
+        "label": ""
+      },
       "properties": {
         "name": "Kanheri",
         "Group": "Kanheri environs",
         "startYear": "first century BCE to first century CE",
-        "endYear": "late first millennium",
-        "when": {
-          "timespans": [{
-            "start": {
-              "in": "0100"
-            },
-            "end": {
-              "in": "0900"
-            }
-          }],
-          "periods": [{
-              "name": "Early Historic",
-              "@id": "periodo:p08m57hd85k"
-            }
-          ],
-          "label": ""
-        }
+        "endYear": "late first millennium"
       }
     },
     {
@@ -94,27 +94,27 @@ onLoadData({
         "type": "Point",
         "coordinates": [73.748, 19.941, 765]
       },
+      "when": {
+        "timespans": [{
+          "start": {
+            "in": "-0200"
+          },
+          "end": {
+            "in": "0400"
+          }
+        }],
+        "periods": [{
+            "name": "Early Historic",
+            "@id": "periodo:p08m57hd85k"
+          }
+        ],
+        "label": ""
+      },
       "properties": {
         "name": "Nasik Pandu Lena",
         "Group": "Nasik",
         "startYear": "second century BCE",
         "endYear": "second century CE",
-        "when": {
-          "timespans": [{
-            "start": {
-              "in": "-0200"
-            },
-            "end": {
-              "in": "0400"
-            }
-          }],
-          "periods": [{
-              "name": "Early Historic",
-              "@id": "periodo:p08m57hd85k"
-            }
-          ],
-          "label": ""
-        }
       }
     }
   ]

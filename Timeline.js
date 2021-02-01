@@ -69,28 +69,39 @@ L.Timeline = L.GeoJSON.extend({
 
     // TODO Hack Refactor to combine with forEach below
     var geoJSONT = data.features.map(function(feature){
-      
-      if (feature.properties.when && feature.properties.when.timespans.length) {
-         var spans = feature.properties.when.timespans
-         if (spans[0].start){
-           if (spans[0].start.in) {
-             feature.properties['start'] = spans[0].start.in
-           } else if (spans[0].start.earliest) {
-             feature.properties['start'] = spans[0].start.earliest
-           } else {
-             feature.properties['start'] = spans[0].start
+      if (feature.when) {
+        if (feature.when.timespans && feature.when.timespans.length) {
+           var spans = feature.when.timespans
+           if (spans[0].start){
+             if (spans[0].start.in) {
+               feature.properties['start'] = spans[0].start.in
+             } else if (spans[0].start.earliest) {
+               feature.properties['start'] = spans[0].start.earliest
+             } else {
+               feature.properties['start'] = spans[0].start
+             }
            }
-         }
-         if (spans[0].end){
-           if (spans[0].end.in) {
-             feature.properties['end'] = spans[0].end.in
-           } else if (spans[0].end.latest) {
-             feature.properties['end'] = spans[0].end.latest
-           } else {
-             feature.properties['end'] = spans[0].end
+           if (spans[0].end){
+             if (spans[0].end.in) {
+               feature.properties['end'] = spans[0].end.in
+             } else if (spans[0].end.latest) {
+               feature.properties['end'] = spans[0].end.latest
+             } else {
+               feature.properties['end'] = spans[0].end
+             }
            }
-         }
+        }
+        if (feature.when.start && feature.when.end) {
+            feature.properties['start'] = feature.when.start
+            feature.properties['end'] = feature.when.end
+        }
       }
+
+      // TODO find appropriate value
+      // if (feature.properties['start'] === '' || feature.properties['end'] === '') return
+      if (feature.properties['start'] === '') feature.properties['start'] === 1000
+      if (feature.properties['end'] === '') feature.properties['end'] === '1010'
+
       feature.properties['start'] = parseInt(feature.properties['start'])
       feature.properties['end'] = parseInt(feature.properties['end'])
 
@@ -105,7 +116,7 @@ L.Timeline = L.GeoJSON.extend({
       this.times.push(interval.start);
       this.times.push(interval.end);
 
-      // if (feature.properties.when.timespans[0].start.earliest) this.timespans.push(spans[0])
+      // if (feature.when.timespans[0].start.earliest) this.timespans.push(spans[0])
       start = Math.min(start, interval.start);
       end = Math.max(end, interval.end);
     });

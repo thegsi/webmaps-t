@@ -1,0 +1,536 @@
+onLoadData({
+  "type": "FeatureCollection",
+  "features": [{
+    "type": "Feature",
+    "label": "Stobi (Yugoslavia; STO)",
+    "id": "http://numismatics.org/chrr/id/STO",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [21.97639, 41.55222]
+    },
+    "when": {
+      "start": "0124",
+      "end": "0124"
+    },
+    "properties": {
+      "toponym": "Stobi (North Macedonia)",
+      "gazetteer_label": "Stobi (North Macedonia)",
+      "gazetteer_uri": "https://sws.geonames.org/785473/",
+      "type": "hoard",
+      "closing_date": "125 B.C."
+    }
+  }, {
+    "type": "Feature",
+    "label": "Alt Empordà (Spain; EMP)",
+    "id": "http://numismatics.org/chrr/id/EMP",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [2.99588, 42.25195]
+    },
+    "when": {
+      "start": "0070",
+      "end": "0070"
+    },
+    "properties": {
+      "toponym": "el Far d'Empordà (Spain)",
+      "gazetteer_label": "el Far d'Empordà (Spain)",
+      "gazetteer_uri": "https://sws.geonames.org/3130402/",
+      "type": "hoard",
+      "closing_date": "71 B.C."
+    }
+  }, {
+    "type": "Feature",
+    "label": "Ricina (Italy; RCN)",
+    "id": "http://numismatics.org/chrr/id/RCN",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [13.42649, 43.32149]
+    },
+    "when": {
+      "start": "0100",
+      "end": "0100"
+    },
+    "properties": {
+      "toponym": "Villa Potenza (Italy)",
+      "gazetteer_label": "Villa Potenza (Italy)",
+      "gazetteer_uri": "https://sws.geonames.org/3164162/",
+      "type": "hoard",
+      "closing_date": "101 B.C."
+    }
+  }, {
+    "type": "Feature",
+    "label": "Riccia (Italy; RIC)",
+    "id": "http://numismatics.org/chrr/id/RIC",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [14.83181, 41.48314]
+    },
+    "when": {
+      "start": "0125",
+      "end": "0125"
+    },
+    "properties": {
+      "toponym": "Riccia (Italy)",
+      "gazetteer_label": "Riccia (Italy)",
+      "gazetteer_uri": "https://sws.geonames.org/3169430/",
+      "type": "hoard",
+      "closing_date": "126 B.C."
+    }
+  }, {
+    "type": "Feature",
+    "label": "Gerenzago (Italy; GER)",
+    "id": "http://numismatics.org/chrr/id/GER",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [9.36137, 45.20633]
+    },
+    "when": {
+      "start": "0117",
+      "end": "0117"
+    },
+    "properties": {
+      "toponym": "Gerenzago (Italy)",
+      "gazetteer_label": "Gerenzago (Italy)",
+      "gazetteer_uri": "https://sws.geonames.org/3176196/",
+      "type": "hoard",
+      "closing_date": "118 B.C."
+    }
+  }, {
+    "type": "Feature",
+    "label": "Fiesole (Italy; FIE)",
+    "id": "http://numismatics.org/chrr/id/FIE",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [11.29487, 43.80455]
+    },
+    "when": {
+      "start": "0088",
+      "end": "0088"
+    },
+    "properties": {
+      "toponym": "Fiesole (Italy)",
+      "gazetteer_label": "Fiesole (Italy)",
+      "gazetteer_uri": "https://sws.geonames.org/3177019/",
+      "type": "hoard",
+      "closing_date": "89 B.C."
+    }
+  }, {
+    "type": "Feature",
+    "label": "Santa Anna (Italy; ANA)",
+    "id": "http://numismatics.org/chrr/id/ANA",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [10.48333, 43.83333]
+    },
+    "when": {
+      "start": "0041",
+      "end": "0041"
+    },
+    "properties": {
+      "toponym": "Sant'Anna (Italy)",
+      "gazetteer_label": "Sant'Anna (Italy)",
+      "gazetteer_uri": "https://sws.geonames.org/3167431/",
+      "type": "hoard",
+      "closing_date": "42 B.C."
+    }
+  }, {
+    "type": "Feature",
+    "label": "Cosa (Italy; COS)",
+    "id": "http://numismatics.org/chrr/id/COS",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [13.31667, 41.58333]
+    },
+    "when": {
+      "start": "0073",
+      "end": "0073"
+    },
+    "properties": {
+      "toponym": "Fiume Cosa (Italy)",
+      "gazetteer_label": "Fiume Cosa (Italy)",
+      "gazetteer_uri": "https://sws.geonames.org/3177934/",
+      "type": "hoard",
+      "closing_date": "74 B.C."
+    }
+  }, {
+    "type": "Feature",
+    "label": "Carbonara (Italy; CR2)",
+    "id": "http://numismatics.org/chrr/id/CR2",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [11.22923, 45.03537]
+    },
+    "when": {
+      "start": "0035",
+      "end": "0035"
+    },
+    "properties": {
+      "toponym": "Carbonara di Po (Italy)",
+      "gazetteer_label": "Carbonara di Po (Italy)",
+      "gazetteer_uri": "https://sws.geonames.org/3180570/",
+      "type": "hoard",
+      "closing_date": "36 B.C."
+    }
+  }, {
+    "type": "Feature",
+    "label": "Ossero (Italy; OSS)",
+    "id": "http://numismatics.org/chrr/id/OSS",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [14.39333, 44.69556]
+    },
+    "when": {
+      "start": "0071",
+      "end": "0071"
+    },
+    "properties": {
+      "toponym": "Osor (Croatia)",
+      "gazetteer_label": "Osor (Croatia)",
+      "gazetteer_uri": "https://sws.geonames.org/3193885/",
+      "type": "hoard",
+      "closing_date": "72 B.C."
+    }
+  }, {
+    "type": "Feature",
+    "label": "Palestrina (Italy; PL2)",
+    "id": "http://numismatics.org/chrr/id/PL2",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [12.88178, 41.83274]
+    },
+    "when": {
+      "start": "0073",
+      "end": "0073"
+    },
+    "properties": {
+      "toponym": "Palestrina (Italy)",
+      "gazetteer_label": "Palestrina (Italy)",
+      "gazetteer_uri": "https://sws.geonames.org/3171606/",
+      "type": "hoard",
+      "closing_date": "74 B.C."
+    }
+  }, {
+    "type": "Feature",
+    "label": "Citania de Sanfins (Portugal; CDS)",
+    "id": "http://numismatics.org/chrr/id/CDS",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [8.3854, 41.3263]
+    },
+    "when": {
+      "start": "0026",
+      "end": "0026"
+    },
+    "properties": {
+      "toponym": "Citânia de Sanfins (Portugal)",
+      "gazetteer_label": "Citânia de Sanfins (Portugal)",
+      "gazetteer_uri": "https://sws.geonames.org/8740451/",
+      "type": "hoard",
+      "closing_date": "27 B.C."
+    }
+  }, {
+    "type": "Feature",
+    "label": "Sierra Morena (El Centenillo) (Spain; CEN)",
+    "id": "http://numismatics.org/chrr/id/CEN",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [3.72923, 38.33711]
+    },
+    "when": {
+      "start": "0105",
+      "end": "0105"
+    },
+    "properties": {
+      "toponym": "El Centenillo (Spain)",
+      "gazetteer_label": "El Centenillo (Spain)",
+      "gazetteer_uri": "https://sws.geonames.org/2518587/",
+      "type": "hoard",
+      "closing_date": "106 B.C."
+    }
+  }, {
+    "type": "Feature",
+    "label": "Cerignola (Italy; CG2)",
+    "id": "http://numismatics.org/chrr/id/CG2",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [15.89559, 41.26523]
+    },
+    "when": {
+      "start": "0099",
+      "end": "0099"
+    },
+    "properties": {
+      "toponym": "Cerignola (Italy)",
+      "gazetteer_label": "Cerignola (Italy)",
+      "gazetteer_uri": "https://sws.geonames.org/3179075/",
+      "type": "hoard",
+      "closing_date": "100 B.C."
+    }
+  }, {
+    "type": "Feature",
+    "label": "Cani Islands (Tunisia; CAN)",
+    "id": "http://numismatics.org/chrr/id/CAN",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [10.12137, 37.35455]
+    },
+    "when": {
+      "start": "0145",
+      "end": "0145"
+    },
+    "properties": {
+      "toponym": "Cani Rocks (Tunisia)",
+      "gazetteer_label": "Cani Rocks (Tunisia)",
+      "gazetteer_uri": "https://sws.geonames.org/2471895/",
+      "type": "hoard",
+      "closing_date": "146 B.C."
+    }
+  }, {
+    "type": "Feature",
+    "label": "Casaleone (Italy; CAS)",
+    "id": "http://numismatics.org/chrr/id/CAS",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [11.19401, 45.16821]
+    },
+    "when": {
+      "start": "0050",
+      "end": "0050"
+    },
+    "properties": {
+      "toponym": "Casaleone (Italy)",
+      "gazetteer_label": "Casaleone (Italy)",
+      "gazetteer_uri": "https://sws.geonames.org/3180205/",
+      "type": "hoard",
+      "closing_date": "51 B.C."
+    }
+  }, {
+    "type": "Feature",
+    "label": "Sminja (Tunisia; SMI)",
+    "id": "http://numismatics.org/chrr/id/SMI",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [10, 36.43333]
+    },
+    "when": {
+      "start": "0043",
+      "end": "0043"
+    },
+    "properties": {
+      "toponym": "Bled Sminja (Tunisia)",
+      "gazetteer_label": "Bled Sminja (Tunisia)",
+      "gazetteer_uri": "https://sws.geonames.org/2467279/",
+      "type": "hoard",
+      "closing_date": "44 B.C."
+    }
+  }, {
+    "type": "Feature",
+    "label": "San Miniato al Tedesco (Italy; SMT)",
+    "id": "http://numismatics.org/chrr/id/SMT",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [10.84975, 43.67954]
+    },
+    "when": {
+      "start": "0079",
+      "end": "0079"
+    },
+    "properties": {
+      "toponym": "San Miniato (Italy)",
+      "gazetteer_label": "San Miniato (Italy)",
+      "gazetteer_uri": "https://sws.geonames.org/3167953/",
+      "type": "hoard",
+      "closing_date": "80 B.C."
+    }
+  }, {
+    "type": "Feature",
+    "label": "Imola (Italy; IMO)",
+    "id": "http://numismatics.org/chrr/id/IMO",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [11.7132, 44.35916]
+    },
+    "when": {
+      "start": "0099",
+      "end": "0099"
+    },
+    "properties": {
+      "toponym": "Imola (Italy)",
+      "gazetteer_label": "Imola (Italy)",
+      "gazetteer_uri": "https://sws.geonames.org/3175537/",
+      "type": "hoard",
+      "closing_date": "100 B.C."
+    }
+  }, {
+    "type": "Feature",
+    "label": "Borgonuovo (Italy; BRG)",
+    "id": "http://numismatics.org/chrr/id/BRG",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [10.61667, 43.85]
+    },
+    "when": {
+      "start": "0110",
+      "end": "0110"
+    },
+    "properties": {
+      "toponym": "Borgonuovo (Italy)",
+      "gazetteer_label": "Borgonuovo (Italy)",
+      "gazetteer_uri": "https://sws.geonames.org/3181776/",
+      "type": "hoard",
+      "closing_date": "111 B.C."
+    }
+  }, {
+    "type": "Feature",
+    "label": "San Bartolomeo in Sassoforte (Italy; SBS)",
+    "id": "http://numismatics.org/chrr/id/SBS",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [10.53941, 44.67402]
+    },
+    "when": {
+      "start": "0042",
+      "end": "0042"
+    },
+    "properties": {
+      "toponym": "San Bartolomeo (Italy)",
+      "gazetteer_label": "San Bartolomeo (Italy)",
+      "gazetteer_uri": "https://sws.geonames.org/8629283/",
+      "type": "hoard",
+      "closing_date": "43 B.C."
+    }
+  }, {
+    "type": "Feature",
+    "label": "San Lorenzo del Vallo (Italy; LOR)",
+    "id": "http://numismatics.org/chrr/id/LOR",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [16.29866, 39.66739]
+    },
+    "when": {
+      "start": "0101",
+      "end": "0101"
+    },
+    "properties": {
+      "toponym": "San Lorenzo del Vallo (Italy)",
+      "gazetteer_label": "San Lorenzo del Vallo (Italy)",
+      "gazetteer_uri": "https://sws.geonames.org/2523438/",
+      "type": "hoard",
+      "closing_date": "102 B.C."
+    }
+  }, {
+    "type": "Feature",
+    "label": "Maccarese (Italy; MAC)",
+    "id": "http://numismatics.org/chrr/id/MAC",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [12.21975, 41.87696]
+    },
+    "when": {
+      "start": "0073",
+      "end": "0073"
+    },
+    "properties": {
+      "toponym": "Maccarese (Italy)",
+      "gazetteer_label": "Maccarese (Italy)",
+      "gazetteer_uri": "https://sws.geonames.org/3174410/",
+      "type": "hoard",
+      "closing_date": "74 B.C."
+    }
+  }, {
+    "type": "Feature",
+    "label": "Maddaloni (Italy; MAD)",
+    "id": "http://numismatics.org/chrr/id/MAD",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [14.3823, 41.03578]
+    },
+    "when": {
+      "start": "0114",
+      "end": "0114"
+    },
+    "properties": {
+      "toponym": "Maddaloni (Italy)",
+      "gazetteer_label": "Maddaloni (Italy)",
+      "gazetteer_uri": "https://sws.geonames.org/3174358/",
+      "type": "hoard",
+      "closing_date": "115 B.C."
+    }
+  }, {
+    "type": "Feature",
+    "label": "Castelnovo (Italy; CST)",
+    "id": "http://numismatics.org/chrr/id/CST",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [10.40329, 44.43556]
+    },
+    "when": {
+      "start": "0070",
+      "end": "0070"
+    },
+    "properties": {
+      "toponym": "Castelnovo ne' Monti (Italy)",
+      "gazetteer_label": "Castelnovo ne' Monti (Italy)",
+      "gazetteer_uri": "https://sws.geonames.org/3179546/",
+      "type": "hoard",
+      "closing_date": "71 B.C."
+    }
+  }, {
+    "type": "Feature",
+    "label": "Contigliano (Italy; CTG)",
+    "id": "http://numismatics.org/chrr/id/CTG",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [12.77202, 42.41058]
+    },
+    "when": {
+      "start": "0038",
+      "end": "0038"
+    },
+    "properties": {
+      "toponym": "Contigliano (Italy)",
+      "gazetteer_label": "Contigliano (Italy)",
+      "gazetteer_uri": "https://sws.geonames.org/3178169/",
+      "type": "hoard",
+      "closing_date": "39 B.C."
+    }
+  }, {
+    "type": "Feature",
+    "label": "Carovigno (Italy; CVG)",
+    "id": "http://numismatics.org/chrr/id/CVG",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [17.65847, 40.70626]
+    },
+    "when": {
+      "start": "0099",
+      "end": "0099"
+    },
+    "properties": {
+      "toponym": "Carovigno (Italy)",
+      "gazetteer_label": "Carovigno (Italy)",
+      "gazetteer_uri": "https://sws.geonames.org/3180462/",
+      "type": "hoard",
+      "closing_date": "100 B.C."
+    }
+  }, {
+    "type": "Feature",
+    "label": "Ossolaro (Italy; OSL)",
+    "id": "http://numismatics.org/chrr/id/OSL",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [9.92876, 45.23797]
+    },
+    "when": {
+      "start": "0044",
+      "end": "0044"
+    },
+    "properties": {
+      "toponym": "Paderno Ponchielli (Italy)",
+      "gazetteer_label": "Paderno Ponchielli (Italy)",
+      "gazetteer_uri": "https://sws.geonames.org/3171742/",
+      "type": "hoard",
+      "closing_date": "45 B.C."
+    }
+  }]
+})
