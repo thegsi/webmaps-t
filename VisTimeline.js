@@ -96,34 +96,32 @@ function createVisTimeline(data, visualisation){
     })
 
     var items = Object.keys(bin).map(function(date, i) {
-      // console.log(String(parseInt(date) + 1));
       item = {
-        x: date,
+        x: String(parseInt(date)),
         end: String(parseInt(date) + 1),
         y: bin[date]
       }
-      if (item.end.length === 3) item.end = '0'+ item.end
-      if (item.end.length === 2) item.end = '00'+ item.end
-      if (item.end.length === 1) item.end = '000'+ item.end
+
       return item;
     });
 
-    // function sortByKey(array, key) {
-    //   return array.sort(function(a, b) {
-    //       var x = moment(a[key]).format('YYYY');
-    //       var y = moment(b[key]).format('YYYY');
-    //       return ((x < y) ? -1 : ((x > y) ? 1 : 0));
-    //   });
-    // }
-    //
-    // var sortItems = sortByKey(items, 'x')
+    function sortByKey(array, key) {
+      return array.sort(function(a, b) {
+          var x = moment(a[key]).format('YYYY');
+          var y = moment(b[key]).format('YYYY');
+          return ((x < y) ? -1 : ((x > y) ? 1 : 0));
+      });
+    }
+
+    items = sortByKey(items, 'x')
 
     var options = {
         style:'bar',
-        // barChart: {width:50, align:'center'}, // align: left, center, right
+        barChart: {width:50, align:'center'}, // align: left, center, right
         drawPoints: false,
         // maxHeight: 300,
-        height: '200px',
+        height: '300px',
+        width: '100%',
         // dataAxis: {
         //     icons:true
         // },
@@ -134,11 +132,5 @@ function createVisTimeline(data, visualisation){
 
     var container = document.getElementById('vis-timeline');
     timeline = new vis.Graph2d(container, items, options);
-    d3.select('.vis-t')
-        // .style('width', function() { return 1 / length * 100 + "%"; })
-        .style('margin-left', '-40px')
-        .style('background-color', 'white')
   }
-
-
 }

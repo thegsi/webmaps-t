@@ -10,7 +10,7 @@
   <script src="./TimelineSliderControl.js"></script>
   <script src="./VisTimeline.js"></script>
   <script src="./moment.min.js"></script>
-  <script src="https://d3js.org/d3.v3.min.js"></script>
+  <!-- <script src="https://d3js.org/d3.v3.min.js"></script> -->
   <link href="./vis-timeline-graph2d.min.css" rel="stylesheet" type="text/css" />
   <script src="./vis-timeline-graph2d.min.js"></script>
 
@@ -51,10 +51,15 @@
     /* .vis-t {
       height: 400px;
     } */
-
-    .time-slider {
-      width: 100%;
+    .vis-panel {
+      width: 10%;
     }
+
+    .leaflet-control.leaflet-timeline-control input[type=range] {
+      width: 91%;
+      margin-left: 9%;
+    }
+
   </style>
 </head>
 
