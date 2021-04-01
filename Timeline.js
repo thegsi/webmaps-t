@@ -46,6 +46,7 @@ L.Timeline = L.GeoJSON.extend({
           end:   new Date().setYear(feature.properties.end),
         }
       }
+      
       return {
         start: new Date(feature.properties.start).getTime(),
         end:   new Date(feature.properties.end).getTime(),

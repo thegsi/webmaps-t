@@ -68,6 +68,12 @@ function createVisTimeline(data, visualisation){
         bin[date] += 1
       }
     }
+    function cleanYear (year){
+      var d = new Date(Date.UTC(1990, 1, 1, 1, 1, 1, 0));
+      d.setUTCFullYear(year);
+      // return moment(d).year(); for integer
+      return moment(d).format('YYYY');
+    }
 
     data.features.forEach(function(feature, i){
       if (feature.when) {
@@ -75,30 +81,23 @@ function createVisTimeline(data, visualisation){
            var spans = feature.when.timespans
            if (spans[0].start) {
              // Works for years only
-             formatDate = moment(spans[0].start).format('YYYY');
-             addDateBin(formatDate);
+             cY = cleanYear(spans[0].start)
+             addDateBin(cY);
            }
-        }
-        if (feature.when.start) {
-          var formatDate = String(feature.when.start);
-
-          if (formatDate.length > 6) {
-            var date = new Date()
-            date.setYear(feature.when.start);
-            formatDate = moment(feature.when.start).format('YYYY');
-          }
-          // else if (formatDate.length < 6) {
-          //   // formatDate = String(parseInt(formatDate))
-          // }
-          addDateBin(formatDate)
+        } else if (feature.when.start) {
+          cY = cleanYear(feature.when.start)
+          addDateBin(cY)
         }
       }
     })
 
     var items = Object.keys(bin).map(function(date, i) {
+      cYx = cleanYear(date)
+      cYend = cleanYear(parseInt(date) + 1)
+
       item = {
-        x: String(parseInt(date)),
-        end: String(parseInt(date) + 1),
+        x: cYx,
+        end: cYend,
         y: bin[date]
       }
 
@@ -106,14 +105,27 @@ function createVisTimeline(data, visualisation){
     });
 
     function sortByKey(array, key) {
-      return array.sort(function(a, b) {
-          var x = moment(a[key]).format('YYYY');
-          var y = moment(b[key]).format('YYYY');
-          return ((x < y) ? -1 : ((x > y) ? 1 : 0));
-      });
+      if (String(array[0][key]).length > 3) {
+        // georeferencer
+        return array.sort(function(a, b) {
+            var x = moment(a[key]).format('YYYY');
+            var y = moment(b[key]).format('YYYY');
+            return ((x < y) ? -1 : ((x > y) ? 1 : 0));
+        });
+      } else if (String(array[0][key]).length < 4) {
+        // nomisma
+        return array.sort(function(a, b) {
+            var x = parseInt(a[key])
+            var y = parseInt(b[key])
+            return ((x < y) ? -1 : ((x > y) ? 1 : 0));
+        });
+      }
     }
 
     items = sortByKey(items, 'x')
+
+    startDate = new Date(Date.UTC(1990, 1, 1, 1, 1, 1, 0));
+    endDate = new Date(Date.UTC(1990, 1, 1, 1, 1, 1, 0));
 
     var options = {
         style:'bar',
@@ -126,9 +138,10 @@ function createVisTimeline(data, visualisation){
         //     icons:true
         // },
         orientation:'top',
-        start: items[0].x,
-        end: items[items.length - 1].end
+        start: startDate.setUTCFullYear(items[0].x),
+        end: endDate.setUTCFullYear(items[items.length - 1].end)
     };
+    console.log(items);
 
     var container = document.getElementById('vis-timeline');
     timeline = new vis.Graph2d(container, items, options);
