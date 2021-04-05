@@ -31,6 +31,9 @@ L.Timeline = L.GeoJSON.extend({
       this._getInterval = (...args) => this.options.getInterval(...args);
     }
     if (geojson) {
+      geojson.features = geojson.features.filter(function(feature) {
+        return feature.when;
+      })
       this._process(geojson);
     }
   },
@@ -46,7 +49,7 @@ L.Timeline = L.GeoJSON.extend({
           end:   new Date().setYear(feature.properties.end),
         }
       }
-      
+
       return {
         start: new Date(feature.properties.start).getTime(),
         end:   new Date(feature.properties.end).getTime(),
@@ -128,6 +131,7 @@ L.Timeline = L.GeoJSON.extend({
     if (this.times.length === 0) {
       return;
     }
+    debugger;
     // default sort is lexicographic, even for number types. so need to
     // specify sorting function.
     this.times.sort((a, b) => a - b);
