@@ -41,7 +41,7 @@ function createVisTimeline(data, visualisation){
       stack: true,
       horizontalScroll: true,
       zoomKey: 'ctrlKey',
-      maxHeight: 400,
+      maxHeight: 500,
       start: new Date(dates[0]),
       end: new Date(dates[dates.length - 1]),
       editable: true,

@@ -131,7 +131,7 @@ L.Timeline = L.GeoJSON.extend({
     if (this.times.length === 0) {
       return;
     }
-    debugger;
+    
     // default sort is lexicographic, even for number types. so need to
     // specify sorting function.
     this.times.sort((a, b) => a - b);
