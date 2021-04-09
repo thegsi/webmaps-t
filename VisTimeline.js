@@ -110,15 +110,14 @@ function createVisTimeline(data, visualisation){
 
     var options = {
         style:'bar',
-        barChart: {width:50, align:'center'}, // align: left, center, right
+        // barChart: {width:50, align:'center'}, // align: left, center, right
         drawPoints: false,
-        // maxHeight: 300,
-        height: '300px',
+        maxHeight: 300,
         width: '100%',
         // dataAxis: {
         //     icons:true
         // },
-        orientation:'top',
+        // orientation:'top',
         start: items[0].x,
         end: items[items.length - 1].end
     };
