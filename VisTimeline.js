@@ -1,5 +1,6 @@
 function createVisTimeline(data, visualisation){
 
+  // Year to Milliseconds
   function yearToMs(year){
     var d = new Date(Date.UTC(1990, 1, 1, 1, 1, 1, 0));
     return d.setUTCFullYear(year);
@@ -124,5 +125,73 @@ function createVisTimeline(data, visualisation){
 
     var container = document.getElementById('vis-timeline');
     timeline = new vis.Graph2d(container, items, options);
+  }
+  if (visualisation === 'mg_histogram') {
+    bin = {}
+    function addDateBin (date){
+      date = parseInt(date)
+      if (!bin[date]) {
+        bin[date] = 1
+      } else {
+        bin[date] += 1
+      }
+    }
+
+    data.features.forEach(function(feature, i){
+      if (feature.when) {
+        if (feature.when.timespans && feature.when.timespans.length) {
+           var spans = feature.when.timespans
+           if (spans[0].start) {
+             // Works for years only
+             cY = yearToMs(spans[0].start)
+             addDateBin(cY);
+           }
+        } else if (feature.when.start) {
+          cY = yearToMs(feature.when.start)
+          addDateBin(cY)
+        }
+      }
+    })
+
+    var items = Object.keys(bin).map(function(date, i) {
+      visdate = new Date()
+      xdate = visdate.setMilliseconds(date)
+      end = visdate.setUTCFullYear(visdate.getUTCFullYear() + 1)
+
+      item = {
+        date: new Date(xdate),
+        // end: end,
+        value: bin[date]
+      }
+
+      return item;
+    });
+
+    MG.data_graphic({
+        // title: "",
+        data: items,
+        target: '#vis-timeline',
+        chart_type: 'histogram',
+        full_width: true,
+        top: 0,
+        bottom: 50,
+        x_axis: true,
+        y_axis: true,
+        height: 100,
+        binned: false,
+        bins: Object.keys(bin).length,
+        // bins: 10,
+        bar_margin: 10,
+        show_secondary_x_label: false
+    });
+
+    var elementRect = d3.select('.mg-rollover-rect').node().getBoundingClientRect();
+    viewportHeight = document.documentElement.clientHeight;
+    viewportWidth = document.documentElement.clientWidth;
+    var width = elementRect.width;
+    var bottom = viewportHeight - elementRect.bottom;
+    var right = viewportWidth - elementRect.right;
+    right = right + right * 0.1
+    d3.select(".time-slider").style("width", width + 'px').style('bottom', bottom).style('right', right)
   }
 }

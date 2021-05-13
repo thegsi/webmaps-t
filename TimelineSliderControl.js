@@ -35,7 +35,7 @@ L.TimelineSliderControl = L.Control.extend({
     const defaultOptions = {
       duration: 10000,
       enableKeyboardControls: false,
-      enablePlayback: true,
+      enablePlayback: false,
       formatOutput: output => `${output || ''}`,
       showTicks: true,
       waitToUpdateMap: false,
