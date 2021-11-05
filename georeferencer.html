@@ -10,13 +10,13 @@
   <script src="./TimelineSliderControl.js"></script>
   <script src="./VisTimeline.js"></script>
   <script src="./moment.min.js"></script>
-  <!-- <link href="./vis-timeline-graph2d.min.css" rel="stylesheet" type="text/css" />
+  <link href="./vis-timeline-graph2d.min.css" rel="stylesheet" type="text/css" />
   <link href="./vis-timeline-graph2d.css" rel="stylesheet" type="text/css" />
-  <script src="./vis-timeline-graph2d.min.js"></script> -->
-  <!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js'></script> -->
+  <script src="./vis-timeline-graph2d.min.js"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js'></script>
   <script src="https://d3js.org/d3.v5.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/metrics-graphics/2.15.6/metricsgraphics.min.js"></script>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/metrics-graphics/2.15.6/metricsgraphics.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/metrics-graphics/3.0-alpha3/metricsgraphics.min.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/metrics-graphics/3.0-alpha3/metricsgraphics.min.css" />
 
   <style>
     html,
@@ -34,12 +34,12 @@
       width: 100%;
     }
 
-    /* .leaflet-control-container .leaflet-timeline-controls {
+    .leaflet-control-container .leaflet-timeline-controls {
       box-sizing: border-box;
       width: 100%;
       margin: 0;
       margin-bottom: 15px;
-    } */
+    }
 
     table,
     th,
@@ -52,8 +52,12 @@
       padding: 0;
     }
 
-    .leaflet-control.leaflet-timeline-control input[type=range] {
+    /* .leaflet-control.leaflet-timeline-control input[type=range] {
       position: fixed;
+    } */
+    .leaflet-control.leaflet-timeline-control input[type=range] {
+      width: 91%;
+      margin-left: 9%;
     }
 
   </style>
@@ -118,22 +122,22 @@
       timeline.addTo(map);
       timelineControl.addTo(map);
       timelineControl.addTimelines(timeline);
-      createVisTimeline(data, 'mg_histogram');
+      // createVisTimeline(data, 'mg_histogram');
+      createVisTimeline(data, 'histogram');
     }
-    window.addEventListener('resize', function(event) {
-      var elementRect = d3.select('.mg-rollover-rect').node().getBoundingClientRect();
-      viewportHeight = document.documentElement.clientHeight;
-      viewportWidth = document.documentElement.clientWidth;
-      var width = elementRect.width;
-      var bottom = viewportHeight - elementRect.bottom;
-      var right = viewportWidth - elementRect.right;
-      right = right + right * 0.1
-      d3.select(".time-slider").style("width", width + 'px').style('bottom', bottom).style('right', right)
-    }, true);
+    // window.addEventListener('resize', function(event) {
+    //   var elementRect = d3.select('.mg-rollover-rect').node().getBoundingClientRect();
+    //   viewportHeight = document.documentElement.clientHeight;
+    //   viewportWidth = document.documentElement.clientWidth;
+    //   var width = elementRect.width;
+    //   var bottom = viewportHeight - elementRect.bottom - (elementRect.bottom / 16);
+    //   var right = viewportWidth - elementRect.right;
+    //   right = right + right * 0.1
+    //   d3.select(".time-slider").style("width", width + 'px').style('bottom', bottom).style('right', right)
+    // }, true);
 
   </script>
   <script src="./data/BL_Klokan_zoomify.json"></script>
-  <!-- <script src="./data/nomisma.geojson"></script> -->
 
 </body>
 

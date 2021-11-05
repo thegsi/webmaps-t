@@ -10,9 +10,10 @@
   <script src="./TimelineSliderControl.js"></script>
   <script src="./VisTimeline.js"></script>
   <script src="./moment.min.js"></script>
-  <link href="./vis-timeline-graph2d.min.css" rel="stylesheet" type="text/css" />
-  <script src="./vis-timeline-graph2d.min.js"></script>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js'></script>
+  <!-- <link href="./vis-timeline-graph2d.min.css" rel="stylesheet" type="text/css" /> -->
+  <!-- <link href="./vis-timeline-graph2d.css" rel="stylesheet" type="text/css" /> -->
+  <!-- <script src="./vis-timeline-graph2d.min.js"></script> -->
+  <!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js'></script> -->
   <script src="https://d3js.org/d3.v5.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/metrics-graphics/3.0-alpha3/metricsgraphics.min.js"></script>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/metrics-graphics/3.0-alpha3/metricsgraphics.min.css" />
@@ -118,7 +119,7 @@
       timeline.addTo(map);
       timelineControl.addTo(map);
       timelineControl.addTimelines(timeline);
-      createVisTimeline(data, 'histogram');
+      createVisTimeline(data, 'mg_histogram');
     }
     window.addEventListener('resize', function(event) {
       var elementRect = d3.select('.mg-rollover-rect').node().getBoundingClientRect();
